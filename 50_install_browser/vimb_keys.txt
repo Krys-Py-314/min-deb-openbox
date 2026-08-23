@@ -1,0 +1,11 @@
+🔥 Essential Keyboard Shortcuts to Remember
+
+o – Open a URL in the current tab (press o, type the address, hit Enter).
+t – Open a URL in a new tab (press t, type the address, hit Enter).
+H – Go back in history (like pressing the back button).
+L – Go forward in history.
+d – Close the current tab.
+j / k – Scroll down/up (just like in Vim).
+gg – Scroll to the top of the page.
+G – Scroll to the bottom of the page.
+f – Enter hint mode: press f, then type the highlighted letters/numbers that appear on links to click them without using a mouse.
