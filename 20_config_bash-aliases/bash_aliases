@@ -1,0 +1,13 @@
+alias ls='ls --color=auto'        #DEBIAN-OPENBOX
+alias ll='ls -l --color=auto'     #DEBIAN-OPENBOX
+alias egrep='egrep --color=auto'  #DEBIAN-OPENBOX
+alias fgrep='fgrep --color=auto'  #DEBIAN-OPENBOX
+alias rgrep='rgrep --color=auto'  #DEBIAN-OPENBOX
+alias grep='grep --color=auto'    #DEBIAN-OPENBOX
+alias ip='ip -c'                  #DEBIAN-OPENBOX
+alias leafpad="l3afpad"
+alias edit="l3afpad"
+hostname -I | tr ' ' '\n' | head -n 1 > ~/.config/.ip_adr.txt
+export IPADR=$(eval cat ~/.config/.ip_adr.txt )
+echo $USER @  $IPADR
+echo $IPADR > ~/.config/eth0/address
