@@ -46,7 +46,7 @@ else
         gpu_pkgs="xserver-xorg-video-amdgpu firmware-amd-graphics"
     elif echo "$gpu" | grep -qi nvidia; then
         dpkg -l | grep -q '^ii  nvidia-driver'
-		[ $? -eq 0 ] && gpu_pkgs="nvidia-driver firmware-misc-nonfree" || gpu_pkgs="xserver-xorg-video-nouveau firmware-misc-nonfree"            
+		[ $? -eq 0 ] && gpu_pkgs="nvidia-driver firmware-misc-nonfree" || gpu_pkgs="xserver-xorg-video-nouveau firmware-misc-nonfree"
     fi
 fi
 unset pkg_list
@@ -67,18 +67,9 @@ echo -e "\e[1m\nAccording your neededs you may need to install:\e[0m
 * \e[1mavahi\e[0m: mDNS to detect local hostnames
 * \e[1mbuild-essential gcc g++ make dpkg-dev\e[0m: basic dev tools"
 
-echo " if in parallels then do the following"
+echo "\/ if in parallels VM  then do the following is to be run ti install Parallels Tools"
 echo "apt install build-essential dkms libelf-dev linux-headers-$(uname -r)"
 echo "  umount /media/cdrom"
 echo "  mount /dev/sr0 /media/cdrom"
 echo "  cd /media/cdrom"
 echo "  ./install"
-
-cat << EOF >> ~/.bashrc
-hostname -I | tr ' ' '\n' | head -n 1 > ~/.ip_adr.txt
-export IPADR=$(eval cat ~/.ip_adr.txt )
-echo $IPADR
-EOF
-
-source .bashrc
-
