@@ -46,15 +46,16 @@ deb https://security.debian.org/debian-security/ trixie-security contrib main no
 # deb-src https://security.debian.org/debian-security/ trixie-security contrib main non-free non-free-firmware
 EOF
 
-### configure apt to install only necessary package. 
+### configure apt to install only necessary package.
 ### as root
+
 cat << EOF > /etc/apt/apt.conf.d/99no-recommends
 APT::Install-Recommends "false";
 APT::AutoRemove::RecommendsImportant "false";
 APT::AutoRemove::SuggestsImportant "false";
-EOF 
+EOF
 
 # Update and install packages
-apt-get update  
+apt-get update
 
 echo -e "\e[1mDone...\e[0m"
