@@ -24,14 +24,10 @@ The main script `install` can exec all scripts or only a select list:
   * Install [**`brightness control script`**](https://github.com/leomarcov/debian-openbox/tree/master/30_script_brightness-control) for increase/decrease birghtness screen.
   * Install [**`exit menu`**](https://github.com/leomarcov/debian-openbox/tree/master/10_openbox_exit-menu) based on rofi to show power and exit options.
 
-<img align="center" width="450" src="https://user-images.githubusercontent.com/32820131/79147593-764c5f00-7dc4-11ea-9ca2-f2569260928f.png"> <img align="center" width="450" src="https://user-images.githubusercontent.com/32820131/79147594-76e4f580-7dc4-11ea-9f2c-56376bd9e6fa.png">
-
-<img align="center" width="450" src="https://user-images.githubusercontent.com/32820131/79147600-777d8c00-7dc4-11ea-9e01-f3d072fa8961.png"> <img align="center" width="450" src="https://user-images.githubusercontent.com/32820131/81058996-de77f780-8ecf-11ea-9ec0-aa089c637c8a.png">
 
 &nbsp; 
 ## Install
-  * Install Debian using netinstall image. Its recommended don't install `Debian desktop environment`, install only `standard system utilities`.
-<img align="center" width="700" src="https://user-images.githubusercontent.com/32820131/101158317-d467d400-362b-11eb-8759-9d3beb40a20c.png">
+  * Install Debian using netinstall image. Its recommended don't install `Debian desktop environment`, install ONLY `standard system utilities`.
   
   * Connect to Internet. If you need to connect to WIFI network in CLI you can do:
   ```
@@ -138,6 +134,5 @@ The script can be easily customized. Each `install.sh` script placed in a subdir
 Debian-Openbox license is [GPLv3](LICENSE)
 
 ## Contact
-My name is Leonardo Marco. I'm sysadmin teacher in [CIFP Carlos III](https://cifpcarlos3.es/), Cartagena, Murcia (Spain).
-
-You can email me for suggestions, contributions, debian-openbox script help or share your feelings: labadmin@leonardomarco.com
+Initial author name is Leonardo Marco. He iscsysadmin teacher in [CIFP Carlos III](https://cifpcarlos3.es/), Cartagena, Murcia (Spain).
+Email me for suggestions, contributions, debian-openbox script help or share your feelings: labadmin@leonardomarco.com
